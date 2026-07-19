@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CraftRanks | Modern Minecraft Leaderboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="/" class="logo">CRAFT<span style="color:#fff;">RANKS</span></a>
+    <nav>
+      <button class="btn" onclick="document.getElementById('add-modal').style.display='flex'">+ Add Server</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>FIND THE BEST MINECRAFT SERVERS</h1>
+    <p>Discover, vote, and play on top-rated Minecraft servers worldwide.</p>
+  </section>
+
+  <div class="controls-container">
+    <input type="text" id="search-input" class="search-input" placeholder="Search servers by name or description...">
+    <select id="category-select" class="select-input">
+      <option value="All">All Categories</option>
+      <option value="Survival">Survival</option>
+      <option value="Lifesteal">Lifesteal</option>
+      <option value="Skyblock">Skyblock</option>
+      <option value="SMP">SMP</option>
+      <option value="PvP">PvP</option>
+      <option value="Prison">Prison</option>
+      <option value="Minigames">Minigames</option>
+    </select>
+  </div>
+
+  <main class="container" id="server-list">
+    </main>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
